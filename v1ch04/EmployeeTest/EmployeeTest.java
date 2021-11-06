@@ -24,6 +24,7 @@ public class EmployeeTest
       for (Employee e : staff)
          System.out.println("name=" + e.getName() + ",salary=" + e.getSalary() + ",hireDay=" 
             + e.getHireDay());
+      
    }
 }
 
