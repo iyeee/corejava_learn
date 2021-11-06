@@ -1,7 +1,4 @@
 {
     "java.project.sourcePaths": [
-        "v1ch03/test",
-        "v1ch02/Welcome",
-        "v1ch03/BigIntegerTest"
     ]
 }

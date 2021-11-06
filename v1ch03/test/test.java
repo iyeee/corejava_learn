@@ -1,8 +1,7 @@
 import java.math.BigInteger;
 import java.util.Arrays;
-
-import javax.swing.plaf.synth.SynthScrollPaneUI;
-
+import java.util.Date;
+import static java.lang.System.*;
 public class test {
     public static void main(String[] args) {
 
@@ -79,6 +78,11 @@ public class test {
         arr8[0]=new int[10];
         arr8[1]=new int[7];
         System.out.println(arr8[1][0]);
+        Date date=new Date();
+        System.out.println(date.getTime());
+        exit(0);
+        out.println("1231");
+        
 
     }    
 
