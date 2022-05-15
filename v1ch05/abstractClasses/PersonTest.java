@@ -1,5 +1,7 @@
 package abstractClasses;
 
+import javax.sql.rowset.spi.SyncResolver;
+
 /**
  * This program demonstrates abstract classes.
  * @version 1.01 2004-02-21
@@ -18,5 +20,8 @@ public class PersonTest
       // print out names and descriptions of all Person objects
       for (Person p : people)
          System.out.println(p.getName() + ", " + p.getDescription());
+      
+      Object bObject=new int[10];
+      System.out.println(bObject.getClass()); 
    }
-}
+}  

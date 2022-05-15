@@ -4,6 +4,8 @@ public abstract class Person
 {
    public abstract String getDescription();
    private String name;
+    String id;
+   
 
    public Person(String name)
    {

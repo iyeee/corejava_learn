@@ -1,5 +1,7 @@
 package equals;
 
+import java.util.Objects;
+
 /**
  * This program demonstrates the equals method.
  * @version 1.12 2012-01-26
@@ -33,5 +35,15 @@ public class EqualsTest
       System.out.println("alice3.hashCode(): " + alice3.hashCode());
       System.out.println("bob.hashCode(): " + bob.hashCode());
       System.out.println("carl.hashCode(): " + carl.hashCode());
+
+
+      System.out.println(Objects.equals(null, 1));
+
+      String s="Ok";
+      String t="Ok";
+      System.out.println(s.hashCode()+" "+t.hashCode());
+      System.out.println(Objects.hashCode("Ok"));
+      System.out.println();
+      Object
    }
 }
