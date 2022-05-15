@@ -37,7 +37,7 @@ public class Employee
       salary += raise;
    }
 
-   public boolean equals(Object otherObject)
+   public boolean equals(Object otherObject) 
    {
       // a quick test to see if the objects are identical
       if (this == otherObject) return true;

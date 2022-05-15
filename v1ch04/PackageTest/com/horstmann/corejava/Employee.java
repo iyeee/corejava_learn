@@ -25,6 +25,10 @@ public class Employee
       hireDay = LocalDate.of(year, month, day);
    }
 
+   public Employee(){
+      
+   }
+
    public String getName()
    {
       return name;
@@ -44,5 +48,12 @@ public class Employee
    {
       double raise = salary * byPercent / 100;
       salary += raise;
+   }
+   public static void main(String[] args) {
+      Employee employee=new Employee();
+      System.out.println(employee.name);
+      System.out.println(System.getProperty("java.class.path"));
+      System.out.println(System.getProperty("user.dir"));
+
    }
 }

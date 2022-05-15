@@ -11,10 +11,14 @@ public class Manager extends Employee
     * @param month the hire month
     * @param day the hire day
     */
-   public Manager(String name, double salary, int year, int month, int day)
-   {
-      super(name, salary, year, month, day);
-      bonus = 0;
+   // public Manager(String name, double salary, int year, int month, int day)
+   // {
+   //    super(name, salary, year, month, day);
+   //    bonus = 0;
+   // }
+   public Manager(){
+      super();
+      System.out.println(222);
    }
 
    public double getSalary()

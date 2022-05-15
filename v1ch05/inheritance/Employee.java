@@ -8,11 +8,14 @@ public class Employee
    private double salary;
    private LocalDate hireDay;
 
-   public Employee(String name, double salary, int year, int month, int day)
-   {
-      this.name = name;
-      this.salary = salary;
-      hireDay = LocalDate.of(year, month, day);
+   // public Employee(String name, double salary, int year, int month, int day)
+   // {
+   //    this.name = name;
+   //    this.salary = salary;
+   //    hireDay = LocalDate.of(year, month, day);
+   // }
+   public Employee(){
+      System.out.println(111);
    }
 
    public String getName()
