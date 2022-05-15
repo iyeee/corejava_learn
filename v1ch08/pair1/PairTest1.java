@@ -8,10 +8,12 @@ public class PairTest1
 {
    public static void main(String[] args)
    {
-      String[] words = { "Mary", "had", "a", "little", "lamb" };
+      String[] words = { "a", "b", "c", "d", "e" };
       Pair<String> mm = ArrayAlg.minmax(words);
       System.out.println("min = " + mm.getFirst());
       System.out.println("max = " + mm.getSecond());
+      System.out.println(ArrayAlg.<String>getMiddle(words));
+      System.out.println(ArrayAlg.getMiddle(words));
    }
 }
 
@@ -33,5 +35,8 @@ class ArrayAlg
          if (max.compareTo(a[i]) < 0) max = a[i];
       }
       return new Pair<>(min, max);
+   }
+   public static <T> T getMiddle(T... a){
+      return a[a.length/2];
    }
 }
