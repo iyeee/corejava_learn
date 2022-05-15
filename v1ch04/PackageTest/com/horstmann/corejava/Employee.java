@@ -1,5 +1,7 @@
 package com.horstmann.corejava;
 
+import java.sql.Date;
+
 // the classes in this file are part of this package
 
 import java.time.*;
