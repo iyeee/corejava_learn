@@ -18,3 +18,8 @@ public class Pair<T>
    public void setFirst(T newValue) { first = newValue; }
    public void setSecond(T newValue) { second = newValue; }
 }
+class Employee implements Cloneable{
+   public Employee clone() throws CloneNotSupportedException{
+      return null;
+   }
+}

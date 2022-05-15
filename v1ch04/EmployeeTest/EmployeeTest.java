@@ -1,4 +1,3 @@
-import java.text.NumberFormat;
 import java.time.*;
 import java.util.Objects;
 
@@ -20,7 +19,6 @@ public class EmployeeTest
 
       var staff1=new Employee("da", 12, 1998, 05, 24);
       System.out.println(staff1.toString());
-      NumberFormat
 
       // raise everyone's salary by 5%
       for (Employee e : staff)

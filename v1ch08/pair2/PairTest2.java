@@ -1,5 +1,6 @@
 package pair2;
 
+import java.io.Serializable;
 import java.time.*;
 
 /**
@@ -20,6 +21,7 @@ public class PairTest2
       Pair<LocalDate> mm = ArrayAlg.minmax(birthdays);
       System.out.println("min = " + mm.getFirst());
       System.out.println("max = " + mm.getSecond());
+      new Employee().toString();
    }
 }
 
@@ -30,7 +32,7 @@ class ArrayAlg
       @param a an array of objects of type T
       @return a pair with the min and max values, or null if a is null or empty
    */
-   public static <T extends Comparable> Pair<T> minmax(T[] a) 
+   public static <T extends Comparable&Serializable> Pair<T> minmax(T[] a) 
    {
       if (a == null || a.length == 0) return null;
       T min = a[0];
