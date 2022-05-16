@@ -16,7 +16,7 @@ public class PairTest1
       System.out.println(ArrayAlg.getMiddle(words));
    }
 }
-
+@SuppressWarnings("unchecked")
 class ArrayAlg
 {
    /**
