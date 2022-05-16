@@ -4,7 +4,8 @@ import java.util.*;
 
 public class NoGenericArray
 {
-   public static <T extends Comparable> T[] minmax(T... a)
+   @SuppressWarnings("unchecked")
+   public static <T extends Comparable<? super T>> T[] minmax(T... a)
    {
       var mm = new Comparable[2];
       T min = a[0];
