@@ -63,6 +63,7 @@ class PairAlg
    }
 
    public static void swap(Pair<?> p) { swapHelper(p); }
+   // public static <T> void swap(Pair<T> p) { swapHelper(p); }
 
    public static <T> void swapHelper(Pair<T> p)
    {
