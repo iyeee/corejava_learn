@@ -37,5 +37,12 @@ public class MapTest
 
       staff.forEach((k, v) -> 
          System.out.println("key=" + k + ", value=" + v));
+
+      staff.forEach((k,v)->System.out.println("key="+k));
+
+      staff.putIfAbsent("k", new Employee("Tom"));
+
+      System.out.println(staff);
+
    }
 }
