@@ -1,6 +1,7 @@
 package threads;
 
 import java.util.*;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * A bank with a number of bank accounts.
@@ -8,6 +9,7 @@ import java.util.*;
 public class Bank
 {
    private final double[] accounts;
+   private ReentrantLock rLock=new ReentrantLock();
 
    /**
     * Constructs the bank.
@@ -28,12 +30,18 @@ public class Bank
     */
    public void transfer(int from, int to, double amount)
    {
+      rLock.lock();
+      try{
       if (accounts[from] < amount) return;
       System.out.print(Thread.currentThread());
       accounts[from] -= amount;
       System.out.printf(" %10.2f from %d to %d", amount, from, to);
       accounts[to] += amount;
       System.out.printf(" Total Balance: %10.2f%n", getTotalBalance());
+      }
+      finally{
+         rLock.unlock();
+      }
    }
 
    /**
