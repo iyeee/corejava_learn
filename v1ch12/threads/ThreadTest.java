@@ -7,7 +7,7 @@ package threads;
 public class ThreadTest
 {
    public static final int DELAY = 10;
-   public static final int STEPS = 100;
+   public static final int STEPS = 1000000;
    public static final double MAX_AMOUNT = 1000;
 
    public static void main(String[] args)
@@ -47,6 +47,5 @@ public class ThreadTest
       
       new Thread(task1).start();
       new Thread(task2).start();
-      new Thread(task2).jo
    }
 }
