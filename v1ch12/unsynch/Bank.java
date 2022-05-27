@@ -53,7 +53,7 @@ public class Bank
          rLock.unlock();
       }
    }
-
+ 
    /**
     * Gets the sum of all account balances.
     * @return the total balance
