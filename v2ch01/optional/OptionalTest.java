@@ -13,13 +13,13 @@ public class OptionalTest
    public static void main(String[] args) throws IOException
    {
       var contents = Files.readString(
-         Paths.get("../gutenberg/alice30.txt"));
+         Paths.get("gutenberg/alice30.txt"));
       List<String> wordList = List.of(contents.split("\\PL+"));
 
       Optional<String> optionalValue = wordList.stream()
-         .filter(s -> s.contains("fred"))
+         .filter(s -> s.contains("f"))
          .findFirst();
-      System.out.println(optionalValue.orElse("No word") + " contains fred");
+      System.out.println(optionalValue.orElse("No word") + " contains f");
 
       Optional<String> optionalString = Optional.empty();
       String result = optionalString.orElse("N/A");
