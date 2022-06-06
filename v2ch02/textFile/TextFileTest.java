@@ -35,6 +35,9 @@ public class TextFileTest
          for (Employee e : newStaff)
             System.out.println(e);
       }
+      System.out.println(Charset.defaultCharset());
+      System.out.println(Charset.availableCharsets());
+      
    }
 
    /**
