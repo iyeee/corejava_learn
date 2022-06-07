@@ -15,7 +15,8 @@ public class PostTest
 {
    public static void main(String[] args) throws IOException
    {
-      String propsFilename = args.length > 0 ? args[0] : "post/post.properties"; 
+      // System.out.println ( System.getProperty ("user.dir") );
+      String propsFilename = args.length > 0 ? args[0] : "./v2ch04/post/post.properties"; 
       var props = new Properties();
       try (InputStream in = Files.newInputStream(Paths.get(propsFilename)))
       {
