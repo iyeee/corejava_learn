@@ -14,9 +14,11 @@ public class PairTest1
       System.out.println("max = " + mm.getSecond());
       System.out.println(ArrayAlg.<String>getMiddle(words));
       System.out.println(ArrayAlg.getMiddle(words));
+      System.out.println(ArrayAlg.getMiddle(3.14,1729,0));
+      System.out.println(ArrayAlg.getMiddle("hello",0,null));
    }
 }
-@SuppressWarnings("unchecked")
+// @SuppressWarnings("unchecked")
 class ArrayAlg
 {
    /**
